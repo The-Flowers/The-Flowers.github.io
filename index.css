@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '黑体';
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #076fff;
+}
+
+.banner {
+
+    padding: 40px;
+    height: 600px;
+    background-color: orange;
+    position: relative;
+
+    text-align: right;
+    color: #333;
+}
+
+.banner h1 {
+    margin: 70px 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100px;
+
+    letter-spacing: .1em;
+    background-image: linear-gradient(420deg,#6ad9a9,#f3ff6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+    font-size: 26px;
+    color: darkred;
+    font-weight: 700;
+
+    letter-spacing: .1em;
+    background-image: linear-gradient(240deg,#590101d3,#df7402);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner a {
+    margin-top: 100px;
+    margin-right: 100px;
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    background-color: #f06b1f;
+    transition:  all 1s; 
+
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner a:hover {
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    background-color: crimson;
+    color: #000;
+
+}
+
+.banner .bgi {
+    position: absolute;
+    top: 5%;
+    height: 700px;
+    width: 900px;
+    background-image: url('./images/supermali.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner .bgif {
+    width: 90px;
+    height: 230px;
+    background-image: url('./images/money.gif');
+
+    position: absolute;
+    right: 330px;
+    bottom: 3px;
+}
+
+.center_top {
+    height: 20px;
+    text-align: right;
+    position: fixed; 
+    right: 0px;
+}
+
+.center {
+    margin: 58px auto;
+    border-radius: 10px;
+    width: 1200px;
+    height: 800px;
+    background-color: rgba(233, 203, 244, 0.2);
+}
+
+.center ul::after{
+    content: "";     
+    clear: both;  
+    display: block;
+} 
+
+.center li {
+    float: left;
+    
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px  3px  2px  2px rgba(0,0,0,0.7);
+
+    width: 277.5px;
+    height: 390px;
+    background-color: aqua;
+}
+
+.center li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.center li a {
+    color: #3f3a3a;
+}
+
+.center li a .top{
+    margin: 10px auto;
+    width: 256px;
+    height: 240px;
+    box-shadow: 2px  4px  2px  2px rgba(0,0,0,0.3);  
+}
+
+.center li a .bottom{
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 256px;
+    height: 100px;
+    /* background-color: #f06b1f; */
+    text-align: center;
+}
+
+.center .li1 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/maliao_play.png');
+} 
+
+.center .li2 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/hdl_play.png');
+} 
+
+.center .li3 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/maliao3_play.png');
+} 
+
+.center .li4 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/klkd_play.png');
+} 
+
+.center .li5 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/hjdt2_play.png');
+} 
+
+.center .li6 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/hjdt3_play.png');
+} 
+
+.center .li7 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/hjdt5_play.png');
+} 
+
+.center .li8 a .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/tkdz_play.png');
+} 
+
+.center .btm {
+    height: 80px;
+    background-color: #0c9de5;
+}
+
+.center .btm h3{
+    text-align: center;
+    line-height: 80px;
+}

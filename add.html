@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加入我们</title>
+    <link rel="shortcut icon" href="./images/Meme_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./add.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>让我们了解一下你!</h1>
+            <p>Maybe this is an opportunity</p>
+        </div>
+        <div class="right">
+            <form action="" method="post" name="myForm" onsubmit="return validateForm()">
+                如何称呼: <input type="test" name="username"> <br><br>
+                您的芳龄: <input type="text" name="age"> <br><br>
+                联系手机: <input type="text" name="phone"> <br><br>
+                联系邮箱: <input type="email" name="email"> <br><br>
+                自我展示: <textarea name="note"></textarea> <br><br>
+                <input type="submit" class="sub" value="加入我们">
+            </form>
+            <div class="bu">
+                <a href="./index.html">再考虑考虑...</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function validateForm() {
+        var username = document.forms["myForm"]["username"].value;
+        var age = document.forms["myForm"]["age"].value;
+        var phone = document.forms["myForm"]["phone"].value;
+        var email = document.forms["myForm"]["email"].value;
+        if (username == null || username == "") {
+            alert("姓名还未填哦！");
+            return false;
+        } else if (age == null || age == "") {
+            alert("还是填一下年龄吧！");
+            return false;
+        } else if (phone == null || phone == "") {
+            alert("不填手机号,我们联系不到您哦！");
+            return false;
+        } else if (email == null || email == "") {
+            alert("email一起填一下吧！");
+            return false;
+        } else {
+            alert('提交成功');
+            return true;
+        }
+    }
+</script>
+</html>
